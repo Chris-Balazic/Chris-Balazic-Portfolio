@@ -1,0 +1,243 @@
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+a, a:hover { 
+  text-decoration: none;
+}
+
+.navbar {
+  background: #2C3539;
+}
+
+.nav-link {
+  text-transform: uppercase;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+a.nav-link {
+  border-bottom: 2px solid transparent;
+}
+
+a.nav-link.active,
+a.nav-link:hover,
+a.nav-link:focus {
+  color: #fff;
+}
+
+a.nav-link.active {
+  border-bottom: 2px solid orange;
+  transition: all 1s;
+}
+
+section {
+  padding-top: 45px;
+  padding-bottom: 55px;
+}
+
+#chris, #balazic {
+  font-weight: bold;
+  font-size: 1.35rem;
+}
+
+#chris {
+  color: #479cb8;
+}
+
+#balazic {
+  color: orange;
+}
+
+.container > h3 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/****************
+  INTRO SECTION
+****************/
+
+#intro {
+  height: 100vh;
+  background: linear-gradient(rgba(43,80,110, 0.95), rgba(71,156,184, 0.9)),
+              #fff url('../images/landing-bg.jpg') no-repeat center / cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title, .subtitle {
+  display: block;
+  padding: 15px 0;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.title {
+  font-size: 3.5rem;
+}
+
+.subtitle {
+  border-top: 2px solid orange;
+  font-size: 2.2rem;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 4.5em;
+  }
+
+  .subtitle {
+    font-size: 3em;
+  }
+}
+
+/****************
+  ABOUT SECTION
+****************/
+
+#profile-pic {
+  display: block;
+  width: 200px;
+  border-radius: 50%;
+  margin: 0 auto 45px;
+}
+
+#about p {
+  font-size: 1.15em;
+  line-height: 1.7em;
+}
+
+/****************
+  SKILLS SECTION
+****************/
+
+#skills {
+  background: linear-gradient(rgba(43,80,110,0.85), rgba(71,156,184,0.85)),
+              #fff url('../images/skills-bg.jpg') no-repeat center / cover;
+  color: #fff;
+}
+
+.progress {
+  height: 14px;
+  border: 0px solid #fff;
+  margin-bottom: 30px;
+}
+
+.progress > .progress-bar-skill {
+  background: linear-gradient(90deg, #ff8c00, rgba(255,165,0,0.9)); 
+}
+
+/****************
+  WORK SECTION
+****************/
+#work {
+  text-align: center;
+}
+
+#work img {
+  width: 100%;
+}
+
+.work-item {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgb(71,156,184);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.work-item:hover .overlay {
+  height: 100%;
+  bottom: 0;
+  opacity: 0.95;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.work-view {
+  background:#2C3539;
+  padding: 0.6rem 1.5rem;
+  font-size: 0.8rem;
+  color: #FFF;
+  border-radius: 10px;
+}
+
+.work-view:hover {
+  background: #222;
+  color: white;
+  transform: scale(1.1);
+}
+
+i {
+  color:orange;
+}
+
+/****************
+  CONTACT SECTION
+****************/
+
+#contact {
+  background-color: #2C3539;
+  min-height:300px;
+  color: white;
+  padding-bottom: 10px !important;
+  text-align: center;
+}
+
+#contact .social {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+#contact a:link, #contact a:visited, #contact a:active {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  color: orange;
+}
+
+.social img {
+  max-width: 70px;
+}
+
+.social {
+  transition: all .2s ease-in-out; 
+}
+
+@media (min-width: 768px) {
+  .social:hover { 
+    transform: scale(1.1); 
+  }
+}
+
+.copy {
+  border-top: 1px solid orange;
+  text-align: center;
+  padding: 20px 0 0;
+  margin-top: 20px;
+}
